@@ -33,6 +33,17 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>..\bin\Release\net40\SystemInterface.XML</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release 4.0 Client|AnyCPU' ">
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\net40-client</OutputPath>
+    <DefineConstants>TRACE;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\Release\net40-client\SystemInterface.XML</DocumentationFile>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release 4.5|AnyCPU' ">
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>pdbonly</DebugType>
@@ -57,7 +68,6 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
@@ -158,8 +168,6 @@
     <Compile Include="Threading\IThread.cs" />
     <Compile Include="Timers\ITimer.cs" />
     <Compile Include="Timers\ITimerFactory.cs" />
-    <Compile Include="Web\Script\Serialization\IJavaScriptSerializer.cs" />
-    <Compile Include="Web\Script\Serialization\IJavaScriptSerializerFactory.cs" />
     <Compile Include="Xml\IXComment.cs" />
     <Compile Include="Xml\IXCommentFactory.cs" />
     <Compile Include="Xml\IXDocument.cs" />
