@@ -8,9 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
+
 // Disable COM visibility
 [assembly: ComVisible(false)]
 
 // NOTE: Assembly name is set in respective project files.
-[assembly: AssemblyVersion("0.9.0.0")]
+[assembly: AssemblyVersion("0.9.*")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
